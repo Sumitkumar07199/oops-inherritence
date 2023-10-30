@@ -1,0 +1,47 @@
+# hybrid inherritence
+class one:
+  x=200
+  y=10
+  def add(self):
+    m=self.x+self.y
+    print(m)
+
+class second(one):
+  def mul(self):
+    n=self.x*self.y
+    print(n)
+
+class third(second):
+  def div(self):
+    o=self.x/self.y
+    print(o)
+
+class fourth(third):
+  def sqr(self):
+    p=self.x**self.y
+    print(p)
+
+class fifth(third):
+  def sub(self):
+    q=self.x-self.y
+    print(q)
+
+class sixth(third):
+  def mod(self):
+    r=self.x%self.y
+    print(r)
+
+class seventh(fourth,fifth,sixth):
+  def add(self):
+    s=self.x+self.y
+    print(s)
+
+
+k=seventh()
+k.add()
+k.mod()
+k.sub()
+k.sqr()
+k1=third()
+k1.mul()
+k1.div()

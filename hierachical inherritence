@@ -1,0 +1,22 @@
+#Hierarchical inherritence:
+class one:
+  x=100
+  y=10
+  def add(self):
+    n=self.x+self.y
+    print(n)
+
+class secound(one):
+  def mul(self):
+    m=self.x*self.y
+    print(m)
+class three(one):
+  def div(self):
+    o=self.x/self.y
+    print(o)
+
+k=three()
+k.add()
+k.div()
+k1=secound()
+k1.mul()

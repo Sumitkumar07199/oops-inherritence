@@ -1,0 +1,27 @@
+class one:
+  x = 10
+  y = 20
+
+  def add(self):
+    n = self.x + self.y
+    print(n)
+
+
+class second(one):
+
+  def mul(self):
+    s = self.x * self.y
+    print(s)
+
+
+class third(second):
+
+  def div(self):
+    p = self.x / self.y
+    print(p)
+
+
+k = third()
+k.add()
+k.mul()
+k.div()

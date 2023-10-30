@@ -1,0 +1,23 @@
+#multiple inherrritence:
+class a:
+  x=100
+  y=10
+  def add(self):
+    n=self.x+self.y
+    print(n)
+
+class b:
+  x=200
+  y=5
+  def mul(self):
+    m=self.x*self.y
+    print(m)
+class c(a,b):
+  def div(self):
+    o=self.x/self.y
+    print(o)
+
+k=c()
+k.add()
+k.mul()
+k.div()

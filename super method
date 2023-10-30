@@ -1,0 +1,26 @@
+#Super method
+class one:
+  x=10
+  y=20
+  def add(self):
+    a=self.x+self.y
+    return a
+
+class two(one):
+  z=100
+  def add2(self):
+    b=super().add()
+    p=b+self.z
+    print(p)
+
+
+k=two()
+k.add2()
+
+class emp:
+  __salary=4000
+  def show(self):
+      print(self.__salary)
+
+k=emp()
+k.show()     
